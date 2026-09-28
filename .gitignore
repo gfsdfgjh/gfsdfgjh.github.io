@@ -1,0 +1,9 @@
+node_modules/
+dist/
+.npm-cache/
+.preview-browser/
+*.tsbuildinfo
+homepage-preview*.png
+.env
+.env.*
+!.env.example
