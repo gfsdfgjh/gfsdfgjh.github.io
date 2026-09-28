@@ -90,7 +90,7 @@
   html {
     scroll-behavior: smooth;
     scroll-padding-top: 0;
-    scroll-snap-type: y proximity;
+    scroll-snap-type: y mandatory;
   }
 
   body {
@@ -113,6 +113,7 @@ main > section {
   flex-direction: column;
   justify-content: center;
   scroll-snap-align: start;
+  scroll-snap-stop: always;
 }
 
 main > section > .max-w-5xl {
@@ -121,9 +122,10 @@ main > section > .max-w-5xl {
 
 #contact {
   scroll-snap-align: start;
+  scroll-snap-stop: always;
 }
 
-@media (max-width: 767px), (prefers-reduced-motion: reduce) {
+@media (prefers-reduced-motion: reduce) {
   html {
     scroll-snap-type: none;
   }
