@@ -16,9 +16,11 @@ function ProjectCard({ project, num }: { project: Project; num: number }) {
           <span className="kicker text-[10px]">
             {String(num + 1).padStart(2, "0")} / {project.period}
           </span>
-          <span className="rounded-full bg-published-bg px-2.5 py-0.5 text-xs text-published">
-            {project.outcome}
-          </span>
+          {project.outcome && (
+            <span className="rounded-full bg-published-bg px-2.5 py-0.5 text-xs text-published">
+              {project.outcome}
+            </span>
+          )}
         </div>
         <h3 className="mt-3 font-display text-xl leading-snug text-ink sm:text-[22px]">
           {project.title}
