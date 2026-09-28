@@ -53,6 +53,7 @@ export const educations: Education[] = [
 ];
 
 export type Project = {
+  hidden?: boolean;
   title: string;
   period: string;
   summary: string;
@@ -60,9 +61,10 @@ export type Project = {
   detail: { label: string; text: string }[];
 };
 
-export const projects: Project[] = [
+const allProjects: Project[] = [
   {
     title: "大语言模型推理的 Power Sampling 与 Test-Time Scaling 研究",
+    hidden: true,
     period: "2026.02 – 2026.08",
     outcome: "投稿 ICLR 2027",
     summary:
@@ -126,6 +128,8 @@ export const projects: Project[] = [
   },
 ];
 
+export const projects = allProjects.filter((project) => !project.hidden);
+
 export type PaperStatus = "published" | "submitted" | "reviewing" | "preprint";
 
 export type Paper = {
@@ -137,7 +141,7 @@ export type Paper = {
   coFirst?: boolean;
 };
 
-export const papers: Paper[] = [
+const allPapers: Paper[] = [
   {
     title: "DOS: Dependency-Oriented Sampler for Masked Diffusion Language Models",
     authors: "Xueyu Zhou, Yangrong Hu, Jian Huang",
@@ -205,6 +209,9 @@ export const papers: Paper[] = [
     statusLabel: "arXiv",
   },
 ];
+
+// 暂不展示在投会议论文，保留原始记录以便恢复。
+export const papers = allPapers.filter((paper) => paper.status !== "submitted");
 
 export const competitions = [
   {
