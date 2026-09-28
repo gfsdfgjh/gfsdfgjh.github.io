@@ -195,3 +195,28 @@ main > section > .max-w-5xl {
     }
   }
 }
+/* Keep the original layout; scale typography and spacing for desktop reading. */
+@media (min-width: 1024px) {
+  html { font-size: 18px; }
+  main > section.max-w-5xl,
+  main > section > .max-w-5xl,
+  #contact > .max-w-5xl { max-width: 1280px; width: 100%; }
+  #about > .grid { column-gap: 64px; }
+  #about .max-w-xs { max-width: 360px; }
+  #about .max-w-xl { max-width: 680px; }
+  #about h1 + p + div > p:first-child { font-size: 18px; }
+}
+@media (min-width: 1920px) {
+  html { font-size: 20px; }
+  main > section.max-w-5xl,
+  main > section > .max-w-5xl,
+  #contact > .max-w-5xl { max-width: 1440px; }
+  #about > .grid { column-gap: 80px; }
+  #about .max-w-xs { max-width: 400px; }
+  #about .max-w-xl { max-width: 760px; }
+  #about h1 + p + div > p:first-child { font-size: 20px; }
+}
+@media (max-width: 767px) {
+  main > section > .flex.items-end,
+  main > section > div > .flex.items-end { flex-wrap: wrap; gap: 12px; }
+}
