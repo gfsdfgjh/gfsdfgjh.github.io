@@ -89,7 +89,8 @@
 
   html {
     scroll-behavior: smooth;
-    scroll-padding-top: 5.5rem;
+    scroll-padding-top: 0;
+    scroll-snap-type: y proximity;
   }
 
   body {
@@ -101,6 +102,30 @@
 
   ::selection {
     background-color: oklch(0.32 0.06 252 / 0.15);
+  }
+}
+
+/* 每节至少占满一屏；内容较长时自然撑开，避免裁切。 */
+main > section {
+  min-height: 100vh;
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  scroll-snap-align: start;
+}
+
+main > section > .max-w-5xl {
+  width: 100%;
+}
+
+#contact {
+  scroll-snap-align: start;
+}
+
+@media (max-width: 767px), (prefers-reduced-motion: reduce) {
+  html {
+    scroll-snap-type: none;
   }
 }
 
