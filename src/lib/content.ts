@@ -66,7 +66,7 @@ const allProjects: Project[] = [
     title: "大语言模型推理的 Power Sampling 与 Test-Time Scaling 研究",
     hidden: true,
     period: "2026.02 – 2026.08",
-    outcome: "投稿 ICLR 2027",
+    outcome: "",
     summary:
       "发现 Power Sampling 的锐化强度与模型表现呈显著非单调关系，提出无需训练、无需外部 reward model 的自适应锐化方法 ACE，在 5 个模型中的 4 个取得最高平均准确率。",
     detail: [
@@ -80,7 +80,7 @@ const allProjects: Project[] = [
       },
       {
         label: "实验结论及成果",
-        text: "在 HumanEval、GPQA-Diamond、MATH500、AIME 2026 上系统评测，ACE 在 5 个模型中的 4 个取得最高平均准确率；在 Qwen3-8B-Base 上较固定参数 SMC 平均准确率提升 2.9 个百分点，同时仅引入较小额外推理开销；论文投稿至 ICLR 2027。",
+        text: "在 HumanEval、GPQA-Diamond、MATH500、AIME 2026 上系统评测，ACE 在 5 个模型中的 4 个取得最高平均准确率；在 Qwen3-8B-Base 上较固定参数 SMC 平均准确率提升 2.9 个百分点，同时仅引入较小额外推理开销。",
       },
     ],
   },
