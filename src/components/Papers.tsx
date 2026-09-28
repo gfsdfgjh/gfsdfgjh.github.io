@@ -15,7 +15,6 @@ type Filter = "all" | PaperStatus;
 const filters: { key: Filter; label: string }[] = [
   { key: "all", label: "全部" },
   { key: "published", label: "已发表" },
-  { key: "submitted", label: "在投" },
   { key: "reviewing", label: "在审" },
   { key: "preprint", label: "预印本" },
 ];
