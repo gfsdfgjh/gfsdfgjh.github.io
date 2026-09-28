@@ -64,7 +64,6 @@ export type Project = {
 const allProjects: Project[] = [
   {
     title: "大语言模型推理的 Power Sampling 与 Test-Time Scaling 研究",
-    hidden: true,
     period: "2026.02 – 2026.08",
     outcome: "",
     summary:
@@ -107,9 +106,8 @@ const allProjects: Project[] = [
   },
   {
     title: "生成式模型中的合成数据使用",
-    hidden: true,
     period: "2025.04 – 2025.09",
-    outcome: "AOAS 在审",
+    outcome: "",
     summary:
       "揭示直接混合真实与合成数据会引入 distribution shift 与 model collapse，提出 CASD 将数据来源作为条件变量联合学习，FFHQ 上 1k 真实样本 + 合成数据即优于 10k 真实样本基线（FID 4.26 vs. 4.48）。",
     detail: [
@@ -123,7 +121,7 @@ const allProjects: Project[] = [
       },
       {
         label: "实验结论及成果",
-        text: "使用 CIFAR-10、FFHQ 及表格数据等不同类型真实数据，与 StyleGAN、EDM、SD3、FLUX 等合成数据模型进行实验验证；小样本场景下 CASD 在各组合均能提升生成模型表现，同时显著提升生成多样性并降低 memorization / replication；论文投稿 AOAS，在审。",
+        text: "使用 CIFAR-10、FFHQ 及表格数据等不同类型真实数据，与 StyleGAN、EDM、SD3、FLUX 等合成数据模型进行实验验证；小样本场景下 CASD 在各组合均能提升生成模型表现，同时显著提升生成多样性并降低 memorization / replication。",
       },
     ],
   },
