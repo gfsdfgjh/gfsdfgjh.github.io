@@ -107,6 +107,7 @@ const allProjects: Project[] = [
   },
   {
     title: "生成式模型中的合成数据使用",
+    hidden: true,
     period: "2025.04 – 2025.09",
     outcome: "AOAS 在审",
     summary:
@@ -133,6 +134,7 @@ export const projects = allProjects.filter((project) => !project.hidden);
 export type PaperStatus = "published" | "submitted" | "reviewing" | "preprint";
 
 export type Paper = {
+  hidden?: boolean;
   title: string;
   authors: string;
   venue: string;
@@ -188,6 +190,7 @@ const allPapers: Paper[] = [
   },
   {
     title: "Conditional Augmentation Enables Effective Use of Synthetic Data in Diffusion Models",
+    hidden: true,
     authors: "Xueyu Zhou, Yuan Gao, Jian Huang",
     venue: "Annals of Applied Statistics",
     status: "reviewing",
@@ -196,9 +199,9 @@ const allPapers: Paper[] = [
   {
     title: "Transfer Learning Enhanced Sufficient Representation Learning",
     authors: "Yeheng Ge∗, Xueyu Zhou∗, Jian Huang",
-    venue: "Journal of the Royal Statistical Society: Series B",
-    status: "reviewing",
-    statusLabel: "Under Review",
+    venue: "arXiv preprint",
+    status: "preprint",
+    statusLabel: "arXiv",
     coFirst: true,
   },
   {
@@ -211,7 +214,7 @@ const allPapers: Paper[] = [
 ];
 
 // 暂不展示在投会议论文，保留原始记录以便恢复。
-export const papers = allPapers.filter((paper) => paper.status !== "submitted");
+export const papers = allPapers.filter((paper) => !paper.hidden && paper.status !== "submitted");
 
 export const competitions = [
   {
