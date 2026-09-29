@@ -3,9 +3,9 @@
 export const profile = {
   name: "周学宇",
   nameEn: "Xueyu Zhou",
-  title: "香港理工大学 · 统计学博士生",
+  title: "香港理工大学 · 数据科学与人工智能博士",
   school: "香港理工大学",
-  degree: "统计学博士生",
+  degree: "数据科学与人工智能博士",
   department: "数据科学与人工智能学系",
   advisor: "导师：黄坚 教授",
   bio: "我的研究以统计学为基础，关注数据如何塑造大语言模型的学习与推理能力，主要研究合成数据的构建与利用、模型后训练，以及推理中的采样与解码方法。",
@@ -35,7 +35,7 @@ export const educations: Education[] = [
     period: "2023.01 – 至今",
     school: "香港理工大学",
     major: "数据科学与人工智能学系",
-    degree: "统计学 · 博士",
+    degree: "数据科学与人工智能博士",
     highlights: [
       "奖项荣誉：香港理工大学校长奖学金",
       "研究方向：LLM Reasoning、Synthetic Data、Post-training、Representation Learning",
