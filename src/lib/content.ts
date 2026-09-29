@@ -8,7 +8,7 @@ export const profile = {
   degree: "统计学博士生",
   department: "数据科学与人工智能学系",
   advisor: "导师：黄坚 教授",
-  bio: "我的研究以统计学为出发点，关注大语言模型如何学习和利用概率分布。我希望理解，如何通过更有效的采样改善推理，如何利用合成数据学习而不偏离目标分布，以及如何通过后训练与表示学习，让模型更好地捕捉数据结构、适应下游任务。",
+  bio: "我的研究以统计学为基础，关注数据如何塑造大语言模型的学习与推理能力，主要研究合成数据的构建与利用、模型后训练，以及推理中的采样与解码方法。",
   email: "xueyu.zhou@connect.polyu.hk",
   tags: ["LLM Reasoning", "Synthetic Data", "Post-training", "Representation Learning"],
 };
