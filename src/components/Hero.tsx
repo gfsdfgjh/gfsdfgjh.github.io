@@ -59,7 +59,7 @@ export function Hero() {
               {[
                 ["学校", "The Hong Kong Polytechnic University"],
                 ["学系", profile.department],
-                ["专业", "统计学 · 博士生"],
+                ["专业", profile.degree],
                 ["方向", profile.tags.join(" · ")],
                 ["荣誉", "香港理工大学校长奖学金 · 国家奖学金"],
               ].map(([k, v]) => (
