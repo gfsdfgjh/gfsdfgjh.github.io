@@ -10,7 +10,7 @@ export const profile = {
   advisor: "导师：黄坚 教授",
   bio: "我的研究以统计学为基础，关注数据如何塑造大语言模型的学习与推理能力，主要研究合成数据的构建与利用、模型后训练，以及推理中的采样与解码方法。",
   email: "xueyu.zhou@connect.polyu.hk",
-  tags: ["LLM Reasoning", "Synthetic Data", "Post-training", "Representation Learning"],
+  tags: ["LLM Reasoning", "Synthetic Data", "Post-Training", "Representation Learning"],
 };
 
 export const navItems = [
@@ -38,7 +38,7 @@ export const educations: Education[] = [
     degree: "数据科学与人工智能博士",
     highlights: [
       "奖项荣誉：香港理工大学校长奖学金",
-      "研究方向：LLM Reasoning、Synthetic Data、Post-training、Representation Learning",
+      "研究方向：LLM Reasoning、Synthetic Data、Post-Training、Representation Learning",
     ],
   },
   {
